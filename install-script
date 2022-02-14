@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# UPDATe & UPGRADE SYSTEM. 
+
+echo "UPDATE & UPGRADE THE SYSTEM:"
+sudo apt-get update -yy -qq
+sudo apt-get upgrade -yy -qq
+
+# INSTALL PROGRAMS
+
+echo "INSTALL SAMBA AND APACHE2:"
+sudo apt install samba -yy -qq
+sudo apt install apache2 -yy -qq
+
+# UPDATe & UPGRADE SYSTEM. 
+
+sudo apt-get update -yy -qq
+sudo apt-get upgrade -yy -qq
+
+exit

@@ -39,6 +39,12 @@ sudo mkdir /home/<username>/sambashare
 # EDITING THE SMB.CONF-FILE
 echo "EDITING THE SMB.CONF-FILE:"
 sudo nano /etc/samba/smb.conf
+# THIS IS WHAT YOU NEED TO ADD AT THE END OF SMB.CONF
+#[sambashare]
+#    comment = Samba on Ubuntu
+#    path = /home/username/sambashare
+#    read only = no
+#    browsable = yes
 
 # OPENING UP THE FIREWALL
 echo "OPENING UP THE FIREWALL:"

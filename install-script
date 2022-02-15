@@ -45,6 +45,9 @@ sudo nano /etc/samba/smb.conf
 #    path = /home/username/sambashare
 #    read only = no
 #    browsable = yes
+# YOU DO THIS WITH THE FOLLOWING COMMAND
+echo -e "[sambashare] \n comment = Samba on Ubuntu\n path=/home/ulrich/sambashare\n read only = no\n browsable = yes">> /etc/samba/smb.conf
+
 
 # OPENING UP THE FIREWALL
 echo "OPENING UP THE FIREWALL:"

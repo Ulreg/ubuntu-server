@@ -1,22 +1,23 @@
 #!/bin/bash
 
-# UPDATe & UPGRADE SYSTEM. 
+# UPDATE & UPGRADE SYSTEM. 
 
-echo "UPDATE & UPGRADE THE SYSTEM:"
+echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
 
 # INSTALL PROGRAMS
 
-echo "INSTALL SAMBA AND APACHE2:"
+echo "INSTALLING SAMBA AND APACHE2:"
 sudo apt install samba -yy -qq
 sudo apt install apache2 -yy -qq
 
-echo "INSTALL OPENSSH:"
+echo "INSTALLING OPENSSH:"
 sudo apt install openssh-server
 
-# UPDATe & UPGRADE SYSTEM. 
+# UPDATE & UPGRADE SYSTEM. 
 
+echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
 

@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # UPDATE & UPGRADE SYSTEM. 
@@ -6,7 +7,7 @@ echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
 
-# INSTALL PROGRAMS
+# INSTALL SAMBA & APACHE2
 
 echo "INSTALLING SAMBA AND APACHE2:"
 sudo apt install samba -yy -qq
@@ -17,6 +18,10 @@ sudo apt install apache2 -yy -qq
 echo "INSTALLING NET-TOOLS:"
 sudo apt install net-tools -yy -qq
 
+# INSTALLING HTOP FOR MONITORING THE SYSTEM
+echo "INSTALLING HTOP:"
+sudo apt install htop
+
 echo "INSTALLING OPENSSH:"
 sudo apt install openssh-server -yy -qq
 
@@ -25,5 +30,21 @@ sudo apt install openssh-server -yy -qq
 echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
+
+# SETUP SAMBASHARE FOLDER
+
+echo "SETTING UP SAMBASHARE FOLDER:"
+sudo mkdir /home/<username>/sambashare
+
+# EDITING THE SMB.CONF-FILE
+echo "EDITING THE SMB.CONF-FILE:"
+sudo nano /etc/samba/smb.conf
+
+# OPENING UP THE FIREWALL
+echo "OPENING UP THE FIREWALL:"
+sudo ufw allow samba
+
+# SETTING UP A USER TO CONNECT TO THE SAMBASHARE-FOLDER. 
+#sudo smbpasswd -a <username>
 
 exit

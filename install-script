@@ -12,6 +12,11 @@ echo "INSTALLING SAMBA AND APACHE2:"
 sudo apt install samba -yy -qq
 sudo apt install apache2 -yy -qq
 
+# INSTALLING NET-TOOLS
+
+echo "INSTALLING NET-TOOLS:"
+sudo apt install net-tools -yy -qq
+
 echo "INSTALLING OPENSSH:"
 sudo apt install openssh-server -yy -qq
 

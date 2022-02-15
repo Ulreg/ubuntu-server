@@ -13,7 +13,7 @@ sudo apt install samba -yy -qq
 sudo apt install apache2 -yy -qq
 
 echo "INSTALLING OPENSSH:"
-sudo apt install openssh-server
+sudo apt install openssh-server -yy -qq
 
 # UPDATE & UPGRADE SYSTEM. 
 

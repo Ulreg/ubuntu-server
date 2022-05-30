@@ -18,8 +18,13 @@ echo "INSTALLING NET-TOOLS:"
 sudo apt install net-tools -yy -qq
 
 # INSTALLING HTOP FOR MONITORING THE SYSTEM
+
 echo "INSTALLING HTOP:"
 sudo apt install htop
+
+# INSTALLING NANO
+echo "Install nano:"
+sudo apt install nano
 
 echo "###################################################################################"
 echo "Please be Patient: Installation will start now....... It may take some time :)"

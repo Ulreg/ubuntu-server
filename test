@@ -24,12 +24,12 @@ sudo apt install htop
 
 # INSTALLING NANO
 echo "INSTALLING nano:"
-sudo apt install nano
+sudo apt install nano -y
 
 # INSTALLING LYNX FOR BROWSING
 
 echo "INSTALLING LYNX:"
-sudo apt install lynx
+sudo apt install lynx -y
 
 echo "###################################################################################"
 echo "Please be Patient: Installation will start now....... It may take some time :)"

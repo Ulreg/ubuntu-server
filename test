@@ -17,6 +17,10 @@ sudo apt-get upgrade -yy -qq
 echo "INSTALLING NET-TOOLS:"
 sudo apt install net-tools -yy -qq
 
+# INSTALLING NEOFETCH TO LOOK COOL
+echo "INSTALLING NEOFETCH just to look cool:"
+sudo apt install neofetch -y
+
 # INSTALLING HTOP FOR MONITORING THE SYSTEM
 
 echo "INSTALLING HTOP:"

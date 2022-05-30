@@ -12,6 +12,14 @@ echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
 
+# INSTALLING NET-TOOLS
+
+echo "INSTALLING NET-TOOLS:"
+sudo apt install net-tools -yy -qq
+
+# INSTALLING HTOP FOR MONITORING THE SYSTEM
+echo "INSTALLING HTOP:"
+sudo apt install htop
 
 echo "###################################################################################"
 echo "Please be Patient: Installation will start now....... It may take some time :)"

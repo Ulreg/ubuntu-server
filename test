@@ -1,16 +1,16 @@
 #!/bin/bash
 
+#Instructions: 
+#
+#chmod +x test.sh
+#
+#sudo ./test.sh
+
 # UPDATE & UPGRADE SYSTEM. 
 
 echo "UPDATING & UPGRADING THE SYSTEM:"
 sudo apt-get update -yy -qq
 sudo apt-get upgrade -yy -qq
-
-#Instructions to use this script 
-#
-#chmod +x SCRIPTNAME.sh
-#
-#sudo ./SCRIPTNAME.sh
 
 
 echo "###################################################################################"

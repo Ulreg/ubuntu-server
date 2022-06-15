@@ -35,6 +35,11 @@ sudo apt install nano -y
 echo "INSTALLING LYNX:"
 sudo apt install lynx -y
 
+# INSTALLING MC (ctrl+o to switch between cli and folder layout. F3 to access files and Ecs to exit file.)
+
+echo "INSTALLING MC:"
+sudo apt install mc -y
+
 echo "###################################################################################"
 echo "Please be Patient: Installation will start now....... It may take some time :)"
 echo "###################################################################################"
